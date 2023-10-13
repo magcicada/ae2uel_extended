@@ -15,6 +15,7 @@ tile.appliedenergistics2.perfect_energy_cell.name=Совершенная эне�
 
 tile.appliedenergistics2.energy_cell.name=Энергетическая ячейка
 
+tile.appliedenergistics2.crank_imp.name=Улучшенная деревянная рукоятка
 tile.appliedenergistics2.drive.name=МЭ Накопитель
 tile.appliedenergistics2.driveImp.name=Улучшенный МЭ Накопитель
 tile.appliedenergistics2.energy_acceptor.name=Приёмщик энергии
@@ -308,6 +309,7 @@ gui.appliedenergistics2.ImpBusesJEI=Улучшенная версия прошл
 gui.appliedenergistics2.MACCreativeJEI=Творческая версия молекулярного сборщика, которая может умножать крафтящиеся предметы числом, заданным в config файле. (по умолчанию умножает в 2 раза)
 gui.appliedenergistics2.MACImpJEI=Улучшенная версия молекулярного сборщика, которая работает в 2 раза быстрее его предшественника и не требует ускорителей.
 gui.appliedenergistics2.ImpBusesFluidJEI=Улучшенная версия прошлой шины, позволяющая передавать в 128 раз больше жидкости в секунду.
+gui.appliedenergistics2.CrankImpJEI=Улучшенная версия деревянной рукоятки, ускоряющая работу кварцевого дробителя.
 
 // GUI Tooltips
 gui.tooltips.appliedenergistics2.Stash=Очистить сетку крафта
@@ -513,7 +515,7 @@ item.appliedenergistics2.fluid_storage_cell_4k.name=§e4k§r МЭ Жидкост
 item.appliedenergistics2.fluid_storage_cell_16k.name=§a16k§r МЭ Жидкостная ячейка хранения
 item.appliedenergistics2.fluid_storage_cell_64k.name=§b64k§r МЭ Жидкостная ячейка хранения
 
-item.appliedenergistics2.fluid_storage_cell_1mb.name=§b1mb§r МЭ Жидкостная ячейка хранения
+item.appliedenergistics2.fluid_storage_cell_1mb.name=§d1mb§r МЭ Жидкостная ячейка хранения
 item.appliedenergistics2.fluid_storage_cell_4mb.name=§a4mb§r МЭ Жидкостная ячейка хранения
 item.appliedenergistics2.fluid_storage_cell_16mb.name=§316mb§r МЭ Жидкостная ячейка хранения
 item.appliedenergistics2.fluid_storage_cell_64mb.name=§e64mb§r МЭ Жидкостная ячейка хранения
@@ -641,6 +643,10 @@ item.appliedenergistics2.multi_part.fluid_import_bus.name=МЭ Жидкостн�
 item.appliedenergistics2.multi_part.fluid_import_busimp.name=Улучшенная МЭ Жидкостная шина импорта
 item.appliedenergistics2.multi_part.fluid_export_busimp.name=Улучшенная МЭ Жидкостная шина экспорта
 item.appliedenergistics2.multi_part.interface.name=МЭ Интерфейс
+item.appliedenergistics2.multi_part.interfaceimp.name=МЭ Интерфейс поставки предметов
+item.appliedenergistics2.multi_part.interfaceadv.name=МЭ Продвинутый Интерфейс поставки предметов
+item.appliedenergistics2.multi_part.interfaceper.name=МЭ Совершенный Интерфейс поставки предметов
+item.appliedenergistics2.multi_part.interfacepatt.name=МЭ Шаблонный интерфейс
 item.appliedenergistics2.multi_part.fluid_interface.name=МЭ Жидкостый нтерфейс
 item.appliedenergistics2.multi_part.level_emitter.name=МЭ Предметный излучатель уровня
 item.appliedenergistics2.multi_part.fluid_level_emitter.name=МЭ Жидкостный излучатель уровня
