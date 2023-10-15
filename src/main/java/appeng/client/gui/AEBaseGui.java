@@ -87,6 +87,7 @@ import static appeng.integration.modules.jei.JEIPlugin.runtime;
 
 
 @MouseTweaksIgnore
+
 public abstract class AEBaseGui extends GuiContainer {
     private final List<InternalSlotME> meSlots = new ArrayList<>();
     // drag y
@@ -901,6 +902,7 @@ public abstract class AEBaseGui extends GuiContainer {
                         final ItemStack out = iep.getOutput(is);
                         if (!out.isEmpty()) {
                             AppEngSlot appEngSlot = ((AppEngSlot) s);
+                            if (s.getStack().isEmpty()) return;
                             appEngSlot.setDisplay(true);
                             appEngSlot.setReturnAsSingleStack(true);
 

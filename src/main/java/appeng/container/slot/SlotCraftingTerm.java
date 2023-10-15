@@ -41,9 +41,6 @@ import appeng.util.inv.WrapperCursorItemHandler;
 import appeng.util.inv.WrapperInvItemHandler;
 import appeng.util.item.AEItemStack;
 import com.blamejared.recipestages.recipes.RecipeStage;
-import net.darkhax.gamestages.GameStageHelper;
-import net.darkhax.itemstages.ItemStages;
-import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.InventoryCrafting;
 import net.minecraft.item.Item;
@@ -54,8 +51,6 @@ import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.common.Loader;
-import net.minecraftforge.fml.relauncher.Side;
-import net.minecraftforge.fml.relauncher.SideOnly;
 import net.minecraftforge.items.IItemHandler;
 
 import java.util.ArrayList;
@@ -171,7 +166,8 @@ public class SlotCraftingTerm extends AppEngCraftingSlot {
     // Returns null in case this recipe is not yet unlocked
     private IRecipe handleRecipe(InventoryCrafting ic, IRecipe recipe, EntityPlayer player) {
         if (Loader.isModLoaded("recipestages")) {
-            if (recipe instanceof final RecipeStage staged) {
+            if (recipe instanceof RecipeStage) {
+                final RecipeStage staged = (RecipeStage) recipe;
                 if (!staged.isGoodForCrafting(ic))
                     return null;
             }

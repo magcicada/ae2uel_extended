@@ -20,7 +20,6 @@ package appeng.container.slot;
 
 
 import appeng.util.helpers.ItemHandlerUtil;
-import appeng.util.inv.WrapperInvItemHandler;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.InventoryCrafting;
 import net.minecraft.item.ItemStack;
@@ -135,7 +134,6 @@ public class AppEngCraftingSlot extends AppEngSlot {
     public ItemStack onTake(final EntityPlayer playerIn, final ItemStack stack) {
         this.onCrafting(stack);
         stack.getItem().onCreated(stack, playerIn.world, playerIn);
-
         final InventoryCrafting ic = new InventoryCrafting(this.getContainer(), 3, 3);
 
         for (int x = 0; x < this.craftMatrix.getSlots(); x++) {
