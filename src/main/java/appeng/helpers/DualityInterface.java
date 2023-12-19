@@ -1219,6 +1219,13 @@ public class DualityInterface implements IGridTickable, IStorageMonitorable, IIn
 
         for (final ItemStack is : this.storage) {
             if (!is.isEmpty()) {
+                int maxStackSize = is.getMaxStackSize();
+                while (is.getCount() > maxStackSize) {
+                    ItemStack portionedStack = is.copy();
+                    portionedStack.setCount(maxStackSize);
+                    is.shrink(maxStackSize);
+                    drops.add(portionedStack);
+                }
                 drops.add(is);
             }
         }
